@@ -11,15 +11,14 @@ class App extends Component {
         <div className="App-header">
           <div className="App-headings">
             <h3>Ain't no party like an</h3>
-            <h1>API PARTY</h1>
+            <h1>API Party</h1>
           </div>
-
-        <ul className="nav-links">
-          <li>
-            <NavLink to='/github'>Github API</NavLink>
-          </li>
-        </ul>
-      </div>
+          <ul className="nav-links">
+            <li>
+              <NavLink to='/github'>Github API</NavLink>
+            </li>
+          </ul>
+        </div>
         <Switch>
           <Route path='/github' component={Github} />
           <Route render={() => <p>To get started, click one of the links above</p>} />
@@ -28,5 +27,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
