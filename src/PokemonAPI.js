@@ -6,7 +6,7 @@ import './PokemonAPI.css'
 
 class PokemonAPI extends Component {
   state = {
-    pokemon: ''
+    pokemon: '',
   }
 
   handleChange = (ev) => {
