@@ -5,7 +5,7 @@ import './Pokemon.css'
 class Pokemon extends Component {
    state = {
     pokemon: {
-      sprites: '',
+      sprites: {front_default: null},
       name: '',
       base_experience: '',
       height: '',
@@ -40,7 +40,7 @@ class Pokemon extends Component {
         <h3>Height: {pokemon.height}</h3>
         <h3>Weight: {pokemon.weight}</h3>
       </div>
-    )
+    );
   }
 }
 
