@@ -5,7 +5,7 @@ import './Pokemon.css'
 class Pokemon extends Component {
    state = {
     pokemon: {
-      sprites: {front_default: null},
+      // sprites: {front_default: null},
       name: '',
       base_experience: '',
       height: '',
@@ -34,7 +34,7 @@ class Pokemon extends Component {
     const { pokemon } = this.state
     return (
       <div className="pokemon">
-        <img src={pokemon.sprites.front_default} alt="pokemon"/>
+        {/*<img src={pokemon.sprites[front_default]} alt="pokemon"/>*/}
         <h2>{pokemon.name}</h2>
         <h3>Base Experience: {pokemon.base_experience}</h3>
         <h3>Height: {pokemon.height}lb</h3>

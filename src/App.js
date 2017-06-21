@@ -30,7 +30,7 @@ class App extends Component {
             </li>
 
             <li>
-              <NavLink to='/pokemonapi'>The Pokedex</NavLink>
+              <NavLink to='/pokemon'>The Pokedex</NavLink>
             </li>
 
           </ul>
@@ -39,7 +39,7 @@ class App extends Component {
           <Route path='/github' component={Github} />
           <Route path='/nasa' component={Nasa} />
           <Route path='/homework' component={Homework} />
-          <Route path='/pokemonapi' component={PokemonAPI} />
+          <Route path='/pokemon' component={PokemonAPI} />
           <Route render={() => <p>To get started, click one of the links above</p>} />
         </Switch>
       </div>

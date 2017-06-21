@@ -16,14 +16,15 @@ class PokemonAPI extends Component {
 
   handleSubmit = (ev) => {
     ev.preventDefault()
-    this.props.history.push(`/pokemonapi/${this.state.pokemon}`)
+    this.props.history.push(`/pokemon/${this.state.pokemon}`)
+    this.setState({pokemon: ''})
   }
 
   render() {
     return (
       <div className="pokemonapi">
         <img src="http://gran4u.xtgem.com/Pokedex.png" alt="pokedex" className="pokedex"/>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={  this.handleSubmit.bind(this)}>
           <div>
             <input 
               type="text"
@@ -35,8 +36,8 @@ class PokemonAPI extends Component {
             <button type="submit">Look up Pokemon</button>
           </div>
         </form>
-        <Route exact path='/pokemonapi' render={() => <h3>Please enter a Pokemon name.</h3>} />
-        <Route path='pokemonapi/:pokemon' component={Pokemon}/>
+        <Route exact path='/pokemon' render={() => <h3>Please enter a Pokemon name.</h3>} />
+        <Route path='/pokemon/:username' component={Pokemon} />
       </div>
     )
   }
