@@ -30,7 +30,7 @@ class App extends Component {
             </li>
 
             <li>
-              <NavLink to='pokemonapi'>The Pokedex</NavLink>
+              <NavLink to='/pokemonapi'>The Pokedex</NavLink>
             </li>
 
           </ul>
